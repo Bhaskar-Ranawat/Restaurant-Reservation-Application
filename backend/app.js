@@ -9,7 +9,7 @@ const app = express();
 dotenv.config({path: "./config/.env"});
 
 app.use(cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: "https://restaurant-reservation-application-yhyv.onrender.com/",
     methods: ["POST"],
     credentials: true
 }))
